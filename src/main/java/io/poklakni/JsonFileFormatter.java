@@ -30,6 +30,7 @@ public class JsonFileFormatter {
 
         try (FileWriter writer = new FileWriter(jsonFilePath.toFile())) {
             writer.write(formattedJsonString);
+            writer.write(System.lineSeparator());
         }
     }
 }
